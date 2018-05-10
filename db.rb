@@ -2,7 +2,6 @@ require 'sqlite3'
 
 class Db
   def db_create
-    book = "book"
     SQLite3::Database.open("book.db") do |db|
       db.execute(<<-SQL)
       create table if not exists book
