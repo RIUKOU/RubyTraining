@@ -8,7 +8,7 @@ class Time_data
     time = {"SUN":0, "MON":0, "TUE":0, "WED":0, "THU":0, "FRI":0, "SAT":0}
     csv_data = CSV.read("./timesheet201804.csv",headers:true)
     csv_data.each do |row|
-      time[:"#{week[Date.parse(row["‹Î–±“ú"]).wday]}"] += row["ì‹ÆŠÔ"].to_f
+      time[:"#{week[Date.parse(row["å‹¤å‹™æ—¥"]).wday]}"] += row["ä½œæ¥­æ™‚é–“"].to_f
     end
     #output
     p time
